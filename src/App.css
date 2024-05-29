@@ -1,11 +1,21 @@
+.App {
+  text-align: center;
+}
+
 .game {
   display: flex;
   flex-direction: row;
-  margin: 100px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 200px;
 }
 
 .game-board {
   margin-right: 20px;
+}
+
+.game-info {
+  margin-left: 20px;
 }
 
 .board-row {
@@ -13,9 +23,9 @@
 }
 
 .square {
-  width: 80px;
-  height: 80px;
-  background: #fff;
+  width: 60px;
+  height: 60px;
+  background-color: white;
   border: 1px solid #999;
   font-size: 24px;
   font-weight: bold;
@@ -23,10 +33,29 @@
   outline: none;
 }
 
-.square:focus {
-  background: #ddd;
+.square:hover {
+  background-color: #ddd;
 }
 
-.game-info {
-  margin-left: 60px;
+button {
+  margin-top: 1px;
+  margin-right: 1px;
+}
+.status-bar {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.moves {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.move-button {
+  width: 150px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+.restart-btn{
+ 
+  width: 120px;
 }
